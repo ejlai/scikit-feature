@@ -1,6 +1,6 @@
 import scipy.io
 from sklearn.metrics import accuracy_score
-#from sklearn import cross_validation
+#from sklearn import cross_validation #deprecated since version 0.18.
 from sklearn.model_selection import cross_validate, KFold
 from sklearn import svm
 from skfeature.function.information_theoretical_based import MRMR
