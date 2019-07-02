@@ -8,10 +8,10 @@ from skfeature.function.information_theoretical_based import MRMR
 
 # load data
 mat = scipy.io.loadmat('data/colon.mat')
-X = mat['X']    # data
+X = mat['X']    # data  # (62, 2000)
 X = X.astype(float)
 y = mat['Y']    # label
-y = y[:, 0]
+y = y[:, 0]     # (62,)
 #n_samples, n_features = X.shape    # number of samples and number of features
 
 # perform evaluation on classification task
